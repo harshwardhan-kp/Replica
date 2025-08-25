@@ -4,7 +4,15 @@
     font-family:"Geist",sans-serif; 
 }
 
-
+.fixed-header {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+body {
+    margin-bottom: 1000px;
+    background-color: rgb(250, 250, 250);
+}
 .heading-1 {
     display: flex;
     flex-direction: row;
@@ -12,7 +20,6 @@
     background-color: white;
     padding-top: 10px;
     padding-left: 10px;
-    z-index: 100;
 
 }
 
@@ -148,7 +155,7 @@
 }
 
 .menu-bar {
-    margin-top: 30px;
+    margin-top: 10px;
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -191,4 +198,156 @@
     border-radius: 10px;
     font-size: 16px;
     color: rgb(0, 0, 0);
+}
+
+.function-bar {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 100px 250px 200px;
+    column-gap: 10px;
+}
+.project-search{
+    border: 2px solid rgb(229, 229, 229);
+    margin-left: 30px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+.project-search-input {
+    border: none;
+    color: rgb(63, 62, 62);
+    font-weight: 300;
+    padding-left: 10px;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.burger-menu {
+    border: 2px solid rgb(229, 229, 229);
+    border-radius: 6px;
+}
+.burger-icon {
+    padding: 10px;
+}
+
+.layout-toggle {
+    padding: 5px;
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.add-new {
+    padding: 10px;
+    color: white;
+    background-color: rgb(23, 23, 23);
+    border: 2px solid rgb(23, 23, 23);
+    border-radius: 6px;
+    padding-left: 15px;
+    position: relative;
+    margin-right: 18px;;
+}
+.add-new-text {
+    font-size: 20px;
+    display: inline-block;
+}
+.dropdown {
+    display: inline-block;
+    right: 5px;
+    position: absolute;
+}
+
+.content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.Usage {
+
+}
+.Project-host {
+    background-color: burlywood;
+}
+
+.Usage-box {
+    border: 2px solid rgb(229, 229, 229);
+    background-color: white;
+    border-radius: 6px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.usage-heading {
+    font-size: 20px;
+    line-height: 80px;
+}
+.last-30-days {
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(20, 20, 20);
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+.grid-hori {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 5px;
+}
+
+.updated {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.Progress-circle2 {
+    position: absolute;
+    width: 20px;
+    left: 25px;
+    top: 120px;
+}
+
+.Progress-circle3 {
+    position: absolute;
+    width: 20px;
+    left: 25px;
+    top: 156px;
+}
+.Progress-circle {
+    position: absolute;
+    width: 20px;
+    left: 25px;
+    top: 88px;
+}
+
+
+.dark {
+    display: inline-block;
+    width: 1fr;
+    color: rgb(9, 9, 9);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid rgb(244, 244, 244);
+    background-color: rgb(244, 244, 244);
+    border-radius: 6px;
+}
+.light {
+    display: inline-block;
+    width: 1fr;
+    color: rgb(9, 9, 9);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 6px;
 }
