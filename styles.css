@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Geist:wght@100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Imported the original Vercel Font Style which vercel actyally uses,
+Its the "Geist" font style, its available free on google font  */
+
+/* Setting global styles for all elements */
 * {
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     font-family:"Geist",sans-serif; 
 }
 
+/* Fixed the header so that it remains at its place even when we scroll down */
 .fixed-header {
     position: fixed;
     left: 0;
@@ -12,9 +17,12 @@
     z-index: 100;
     background-color: white;
 }
+
 body {
     background-color: rgb(250, 250, 250);
 }
+
+/* Using flexbox in the header section */
 .heading-1 {
     display: flex;
     flex-direction: row;
@@ -200,6 +208,11 @@ body {
 
 }
 
+/* This comment is for the above code, 
+here ends the first row/section of the header
+I have actually tries to separate the single fixed header into 3 sections,
+and 2 rows lateron */
+
 .menu-bar {
     margin-top: 10px;
     padding-bottom: 10px;
@@ -252,6 +265,10 @@ body {
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
+
+/* Here officially starts the body of the webpage,
+here I will be using Grids to create sections for 
+different sets ie. Search Project, hamburgerMenu etc. */
 
 .function-bar {
     padding-top: 175px;
@@ -365,13 +382,15 @@ body {
     grid-template-columns: 1fr 1.5fr;
     column-gap: 35px;
 }
+
+/* This section is empty but, i have plan to use it later on to create 
+same structure with flexbox */
 .Usage {
-
-}
-.Project-host {
-    background-color: burlywood;
 }
 
+/* Here starts the main section of the page, namely the
+Projects rection and the Resource section, Review section
+Used Grids only in this */
 .Usage-box {
     border: 1px solid rgb(229, 229, 229);
     background-color: white;
@@ -517,6 +536,9 @@ body {
     text-align: center;
 }
 
+/* This is the Right Section ie. where the projects are shown,
+its standardized and can be reused across different projects. */
+
 .Project-template {
     border: 1px solid rgb(229, 229, 229);
     background-color: white;
@@ -527,7 +549,7 @@ body {
     margin-bottom: 30px;
 }
 
-.spark-icon {
+.product-icon {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -598,9 +620,8 @@ body {
     transition: all 0.6s ease;
 }
 
-
 .date {
-    font-size: 19px;
+    font-size: 18px;
     color: rgb(99, 99, 99);
     font-weight: 300;
     margin-top: 1px;
@@ -658,6 +679,8 @@ body {
     
 }
 
+/* This is the end section, the footer section, used button rather than simple
+elements so that later on more functionality can be added */
 .footer {
     padding: 40px;
     padding-left: 80px;
