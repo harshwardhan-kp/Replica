@@ -6,10 +6,19 @@
     <title>Vercel</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="assets/VercelFavicon.ico"> 
+    <!-- Added Title, cover icon and linked stylesheets(styles.css) -->
+
 </head>
 <body>
     <div class="fixed-header">
         <div  class="heading-1" >
+            <!-- 
+            Dividing the main header strip into 3 sections, hLeft, hMiddle and hRight 
+            Flexbox is used in this 
+            -->
+
+
+            <!-- This is the Left Section -->
             <div class="hLeft">
                 <img  src="assets/hii.svg" alt="Vercel-icon" class="small-icon">
                 <span class="slash">/</span>
@@ -19,28 +28,25 @@
                 <span class="Hobby">Hobby</span>
 
                 <img class="toggle-arrow" src="assets/up-down-arrow.svg" alt="up-down-arrow" class="up-down-arrow">
-
             </div>
+
+            <!-- This is the Middle Section
+            This is mostly black and work as a buffer-zone for the terminal sections -->
             <div class="hMiddle"></div>
+
+            <!-- This is the Section at the Right Side -->
             <div class="hRight">
                 <div class="search-bar">
-
                     <div class="search-icon-holder">
                         <img src="assets/search-icon.png" alt="search-icon" width="25px">
                     </div>
                     <input class="search-input" type="text" placeholder="Find...">
-                    <div class="f-respect">
-                        F
-                    </div>
-                <div>
-                    
-                </div>
+                    <div class="f-respect">F</div>
                 </div>
                 <div class="Feedback">
                     <button class="feedback-button">
                         Feedback
                     </button>
-
                 </div>
                 <div class="notification">
                     <img src="assets/bell-icon.svg" alt="bell-icon" height="22px">
@@ -53,6 +59,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- 
+        This is the menu bar
+        It contains different sections of the original Vercel website 
+        -->
         <div class="menu-bar">
             <button class="inMenu"><spam class="Overview">Overview</button>
             <button class="inMenu">Integrations</button>
@@ -63,13 +74,16 @@
             <button class="inMenu">Observability</button>
             <button class="inMenu">Storage</button>
             <button class="inMenu">Flags</button>
-            <button class="inMenu">Al Gateway</button>
+            <button class="inMenu">All Gateway</button>
             <button class="inMenu">Support</button>
             <button class="inMenu">Settings</button>
-
         </div>
     </div>
 
+    <!--
+    This is where the main body of the website starts:
+    This is specifically the Project search zone
+    -->
     <div class="function-bar">
         <div class="project-search">
             <img class="project-search-icon" src="assets/search-icon.png" alt="search-icon" height="22px" >
@@ -90,7 +104,15 @@
         </div>
     </div>
 
+    <!-- 
+    The different sections of the main body start from here,
+    Here the page is divided into two sections,
+    This is done via Grids
+    -->
     <div class="content">
+
+        <!-- This is the Usage Section, here the resouce usge of the Vercel cloud computers
+        displays, also added a upgrade option later-on -->
         <div class="Usage">
             <div class="usage-heading">Usage</div>
             <div class="Usage-box">
@@ -107,6 +129,9 @@
                     <div><button class="upgrade">Upgrade</button></div>
                 </div>
             </div>
+
+            <!-- This "Recent Previews" section is added within the sam grid as the above one 
+            as one is below another -->
             <div class="Recent Previews" style="margin-top: 40px;">
             <div class="usage-heading">Recent Previews</div>
             <div class="Usage-box">
@@ -115,16 +140,17 @@
             </div>
         </div>
         </div>
-
-        
-
-
-
-
         <div class="Projects-host">
             <div class="Project-heading">
                 Projects
             </div>
+            <!--
+            Create a general purpose Project template so that multiple projects 
+            can be displayed with minimal friction
+            -->
+            
+            <!-- Adding the first project, 
+            The Spark Website -->
             <div class="Project-template">
                 <div class="spark-icon"><img src="assets/favicon1.svg" alt="spark-icon"></div>
                 <div><a href="https://spark-2k25.vercel.app/" target="_blank" class="up-project-name">spark-2-k25-2-k26</a></div>
@@ -139,6 +165,8 @@
                 <div><button class="drop-button">&#183;&#183;&#183;</button></div>
             </div>
 
+            <!-- Adding the second project,
+            jovian-responsive-page -->
             <div class="Project-template">
                 <div class="spark-icon"><img src="assets/favicon2.png" alt="jovian-responsive-page" height="55px"></div>
                 <div><a href="https://jovian-responsive-page.vercel.app/" target="_blank" class="up-project-name">jovian-responsive-page</a></div>
@@ -153,6 +181,9 @@
                 <div><button class="drop-button">&#183;&#183;&#183;</button></div>
             </div>
 
+            <!-- The third project is one of my own projects, which i created
+            using warp an ai tool in the eCell class,
+            i didnt use any ai tool in this website by the way -->
             <div class="Project-template">
                 <div class="spark-icon"><img src="assets/favicon5.svg" alt="in-e-cell-ec1s" height="55px"></div>
                 <div><a href="https://in-e-cell-ec1s.vercel.app/" target="_blank" class="up-project-name">in-e-cell-ec1s</a></div>
@@ -169,6 +200,8 @@
         </div>
     </div>
 
+    <!-- Creating a footer Section for the website, 
+    as there is in the real website, tries best to match the colors -->
     <div class="footer">
         <img class="footer-icon" src="assets/hii.svg" alt="black-triangle" height="25px">
         <button class="footer-button">Home</button>
@@ -179,9 +212,10 @@
         <button class="footer-button">Legal</button>
         <button class="check"><span class="check-text">All systems normal</span></button>
         <div class="blue-dot"><img src="assets/blue-dot.svg" alt="blue-dot"></div>
-        <div class="credit">
-            &#169; 2025, Vercel Inc.
-        </div>
+
+        <!-- Using HTML entity for copyright symbol, so no rendering issues occur
+        in bad time -->
+        <div class="credit">&#169; 2025, Vercel Inc.</div>
     </div>
 </body>
 
