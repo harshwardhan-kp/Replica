@@ -247,7 +247,7 @@ body {
 .function-bar {
     padding-top: 175px;
     display: grid;
-    grid-template-columns: 1fr 100px 250px 200px;
+    grid-template-columns: 20fr 1fr 1fr 4fr;
     column-gap: 10px;
 }
 .project-search{
