@@ -336,7 +336,12 @@ body {
     top: 152px;
 }
 
-
+.stats {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    text-align: right;
+}
 
 .dark {
     display: inline-block;
@@ -365,6 +370,25 @@ body {
     border: 1px solid white;
     background-color: white;
     border-radius: 6px;
+}
+
+.expand {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 8px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    left: 235px;
+}
+
+.Preview-box {
+    color: rgb(102, 102, 102);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 70px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .Project-template {
@@ -486,4 +510,10 @@ body {
     right: 30px;
     background-color: transparent;
     border: none;
+}
+.eye {
+    color: rgb(102, 102, 102);
+    position: absolute;
+    top: 25px;
+    left: 235px;
 }
