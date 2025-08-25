@@ -465,6 +465,26 @@ body {
     left: 235px;
 }
 
+.upgrade {
+    position: absolute;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 25px;
+    right: 19px;
+
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.upgrade:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .Preview-box {
     color: rgb(102, 102, 102);
     font-size: 18px;
