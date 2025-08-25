@@ -283,6 +283,10 @@ body {
     padding: 10px;
     opacity: 0.6;
 }
+.burger-icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
 
 .layout-toggle {
     width: 80px;
