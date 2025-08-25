@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Geist:wght@100..900&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    font-family:"Geist",sans-serif; 
+}
+
+
+.heading-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    z-index: 100;
+
+}
+
+.hLeft {
+    width: 33.33%;
+}
+.slash {
+    color: rgb(235, 235, 235);
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.project-name {
+    font-family: "Geist", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    vertical-align: 5px;
+}
+.Hobby {
+    background-color: rgb(235, 235, 235);
+    vertical-align: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+.up-down-arrow {
+    width: 19px;
+    opacity: 0.6;
+    margin-left: 10px;
+}
+.hMiddle {
+    flex: 1;
+}
+
+.hRight {
+    width: 33.33%;
+
+}
+.small-icon {
+    width: 26px;
+}
+
+.search-input {
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    border: none;
+    outline: none;
+    width: 90px;
+    display: inline-block;
+
+}
+.search-input::placeholder {
+    color: rgb(155, 155, 155);
+    font-size: 20px;
+    font-weight: 300;
+}
+.search-icon-holder {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+}
+.search-icon {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+
+}
+
+.f-respect {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 5px;
+    color: rgb(23, 23, 23);
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.search-bar {
+    position: relative;
+    border: 2px solid rgb(229, 229, 229);
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+    border-radius: 10px;
+    width: 200px;
+}
+
+.Feedback {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
